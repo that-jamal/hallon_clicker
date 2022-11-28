@@ -11,12 +11,15 @@ function createBalls(number) {
     }
 }
 
-createBalls(10)
-var count = 1;
+createBalls(11)
+var count = 0;
+console.log(count)
 function onBallClicked(e) {
     document.body.removeChild(e.target)
     if (count < 10) {
         count++;
+        document.getElementById("score").innerHTML = "score " + count;
+
     }
     else {
         clearInterval(downloadTimer);
@@ -27,7 +30,7 @@ function onBallClicked(e) {
 }
 
 function winClick() {
-    setTimeout("location.reload(true);", 1500)
+    setTimeout("location.reload(true);")
 }
 
 var timeleft = 10;

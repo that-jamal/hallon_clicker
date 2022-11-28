@@ -6,6 +6,11 @@ body {
     overflow: hidden;
 }
 
+section {
+    display: flex;
+    justify-content: space-evenly
+}
+
 .ball {
     border: 2px black;
     border-style: solid;
